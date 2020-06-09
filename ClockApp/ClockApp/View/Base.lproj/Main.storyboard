@@ -175,7 +175,6 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <color key="separatorColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="sectionIndexBackgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" id="hvW-vz-0Dm">
                             <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -195,7 +194,7 @@
                                     </userDefinedRuntimeAttributes>
                                 </searchBar>
                             </subviews>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <viewLayoutGuide key="safeArea" id="Ker-bs-RNZ"/>
                         </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AddWorldClockCell" id="zte-ra-2qd" customClass="TimeZonesTableViewCell" customModule="ClockApp" customModuleProvider="target">
@@ -236,7 +235,7 @@
                                         <constraint firstItem="tRs-pz-xl7" firstAttribute="top" secondItem="irU-mG-tUG" secondAttribute="topMargin" constant="10" id="q3P-le-w4p"/>
                                     </constraints>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <outlet property="cityLabel" destination="Ui8-cg-P3x" id="lfj-G0-noj"/>
                                     <outlet property="countryLabel" destination="HU5-rd-nOX" id="fKU-Ub-uxQ"/>

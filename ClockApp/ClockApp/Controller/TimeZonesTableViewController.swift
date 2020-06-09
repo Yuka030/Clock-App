@@ -12,6 +12,7 @@ class TimeZonesTableViewController: UITableViewController, UISearchBarDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.backgroundColor = UIColor.black
         searchText.delegate = self
         timeZoneIdentifiers = TimeZone.knownTimeZoneIdentifiers
         timeZones = getTimeZones(timeZoneIdentifiers)
@@ -42,6 +43,8 @@ class TimeZonesTableViewController: UITableViewController, UISearchBarDelegate {
         
         return cell
     }
+
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == TimeZonesTableViewController.unwindSagueId {
@@ -56,7 +59,7 @@ class TimeZonesTableViewController: UITableViewController, UISearchBarDelegate {
                 let timeNow = Date()
                 let time = formatter.string(from: timeNow)
                 
-                worldClock = WorldClock(dayDiff: "Tomorrow", timeDiff: "+16HRS", country: country, city: city, time: time)
+                worldClock = WorldClock(dayDiff: "Today", timeDiff: "+15HRS", country: country, city: city, time: time)
             }
         }
     }
@@ -74,5 +77,5 @@ class TimeZonesTableViewController: UITableViewController, UISearchBarDelegate {
         }
         tableView.reloadData()
     }
-    
+
 }
