@@ -17,6 +17,11 @@
 		96A7CCBB2481BDB100A44854 /* AlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A7CCBA2481BDB100A44854 /* AlarmViewController.swift */; };
 		96A7CCBD2481BDD200A44854 /* StopwatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A7CCBC2481BDD200A44854 /* StopwatchViewController.swift */; };
 		96A7CCBF2481BDE000A44854 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A7CCBE2481BDDF00A44854 /* TimerViewController.swift */; };
+		B2334A4324909EBE00DB82AD /* AddRingtoneTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2334A4224909EBE00DB82AD /* AddRingtoneTableViewController.swift */; };
+		B2334A4524909EE100DB82AD /* AddRingtoneTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2334A4424909EE100DB82AD /* AddRingtoneTableViewCell.swift */; };
+		B2334A492490A5E900DB82AD /* HMSTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2334A482490A5E900DB82AD /* HMSTimer.swift */; };
+		B2334A4B2490A5FF00DB82AD /* TimeDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2334A4A2490A5FF00DB82AD /* TimeDataSource.swift */; };
+		B2334A4D2490A60F00DB82AD /* Ringtone.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2334A4C2490A60F00DB82AD /* Ringtone.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +37,11 @@
 		96A7CCBA2481BDB100A44854 /* AlarmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmViewController.swift; sourceTree = "<group>"; };
 		96A7CCBC2481BDD200A44854 /* StopwatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchViewController.swift; sourceTree = "<group>"; };
 		96A7CCBE2481BDDF00A44854 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
+		B2334A4224909EBE00DB82AD /* AddRingtoneTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRingtoneTableViewController.swift; sourceTree = "<group>"; };
+		B2334A4424909EE100DB82AD /* AddRingtoneTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRingtoneTableViewCell.swift; sourceTree = "<group>"; };
+		B2334A482490A5E900DB82AD /* HMSTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMSTimer.swift; sourceTree = "<group>"; };
+		B2334A4A2490A5FF00DB82AD /* TimeDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeDataSource.swift; sourceTree = "<group>"; };
+		B2334A4C2490A60F00DB82AD /* Ringtone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ringtone.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,16 +77,53 @@
 				96A7CCA42481B7BC00A44854 /* AppDelegate.swift */,
 				96A7CCA62481B7BC00A44854 /* SceneDelegate.swift */,
 				96A7CCA82481B7BC00A44854 /* ViewController.swift */,
-				96A7CCAA2481B7BC00A44854 /* Main.storyboard */,
+				B2334A4F2490C66000DB82AD /* View */,
+				B2334A4624909EF200DB82AD /* Timer */,
 				96A7CCAD2481B7BE00A44854 /* Assets.xcassets */,
 				96A7CCAF2481B7BE00A44854 /* LaunchScreen.storyboard */,
 				96A7CCB22481B7BE00A44854 /* Info.plist */,
 				96A7CCB82481BD9E00A44854 /* WorldClockViewController.swift */,
 				96A7CCBA2481BDB100A44854 /* AlarmViewController.swift */,
 				96A7CCBC2481BDD200A44854 /* StopwatchViewController.swift */,
-				96A7CCBE2481BDDF00A44854 /* TimerViewController.swift */,
 			);
 			path = ClockApp;
+			sourceTree = "<group>";
+		};
+		B2334A4624909EF200DB82AD /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				B2334A4E2490A61900DB82AD /* Model */,
+				B2334A472490A59400DB82AD /* Controller */,
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
+		B2334A472490A59400DB82AD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B2334A4224909EBE00DB82AD /* AddRingtoneTableViewController.swift */,
+				B2334A4424909EE100DB82AD /* AddRingtoneTableViewCell.swift */,
+				96A7CCBE2481BDDF00A44854 /* TimerViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B2334A4E2490A61900DB82AD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B2334A482490A5E900DB82AD /* HMSTimer.swift */,
+				B2334A4A2490A5FF00DB82AD /* TimeDataSource.swift */,
+				B2334A4C2490A60F00DB82AD /* Ringtone.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B2334A4F2490C66000DB82AD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				96A7CCAA2481B7BC00A44854 /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,9 +201,14 @@
 				96A7CCBB2481BDB100A44854 /* AlarmViewController.swift in Sources */,
 				96A7CCB92481BD9E00A44854 /* WorldClockViewController.swift in Sources */,
 				96A7CCBF2481BDE000A44854 /* TimerViewController.swift in Sources */,
+				B2334A492490A5E900DB82AD /* HMSTimer.swift in Sources */,
 				96A7CCA92481B7BC00A44854 /* ViewController.swift in Sources */,
+				B2334A4324909EBE00DB82AD /* AddRingtoneTableViewController.swift in Sources */,
+				B2334A4524909EE100DB82AD /* AddRingtoneTableViewCell.swift in Sources */,
 				96A7CCA52481B7BC00A44854 /* AppDelegate.swift in Sources */,
+				B2334A4B2490A5FF00DB82AD /* TimeDataSource.swift in Sources */,
 				96A7CCA72481B7BC00A44854 /* SceneDelegate.swift in Sources */,
+				B2334A4D2490A60F00DB82AD /* Ringtone.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
