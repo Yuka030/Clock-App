@@ -34,7 +34,7 @@ struct HMSTimer {
         intCounter += 1
         currentTimeInSec = totalTimeInSec - intCounter
         
-        if currentTimeInSec <= 0 {
+        if currentTimeInSec == 0 {
             isTimerEnded = true
         }
     }

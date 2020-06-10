@@ -1,5 +1,6 @@
 import UIKit
 import AVFoundation
+import KDCircularProgress
 
 enum TimerStatus: String {
     case Start = "Start"
@@ -16,10 +17,13 @@ class TimerViewController: UIViewController {
     private let minutesDataSource = TimeDataSource.minutesDataSource
     private let secondsDataSource = TimeDataSource.secondsDataSource
     var soundIdRing:SystemSoundID?
+    var initAngleValue = 0.0
+    var newAngleValue = 0.0
     
+    @IBOutlet weak var circularProgressView: KDCircularProgress!
     @IBOutlet weak var timerLabel: UILabel!
     @IBOutlet weak var scheduledTimeLabel: UILabel!
-    @IBOutlet weak var timerLabelStackView: UIStackView!
+    @IBOutlet weak var timerView: UIView!
     @IBOutlet weak var hourPickerView: UIPickerView!
     @IBOutlet weak var minutePickerView: UIPickerView!
     @IBOutlet weak var secondPickerView: UIPickerView!
@@ -53,7 +57,7 @@ class TimerViewController: UIViewController {
         case TimerStatus.Start:
             updateTimerLabelUI()
             hmsPickerStackView.isHidden = false
-            timerLabelStackView.isHidden = true
+            timerView.isHidden = true
             timerButton.setTitle("Start", for: .normal)
             cancelButton.isEnabled = false
             timerButton.setTitleColor(.green, for: .normal)
@@ -62,7 +66,7 @@ class TimerViewController: UIViewController {
             
         case TimerStatus.Pause:
             hmsPickerStackView.isHidden = true
-            timerLabelStackView.isHidden = false
+            timerView.isHidden = false
             timerButton.setTitle("Pause", for: .normal)
             cancelButton.isEnabled = true
             timerButton.setTitleColor(.orange, for: .normal)
@@ -71,7 +75,7 @@ class TimerViewController: UIViewController {
         case TimerStatus.Resume:
             updateTimerLabelUI()
             hmsPickerStackView.isHidden = true
-            timerLabelStackView.isHidden = false
+            timerView.isHidden = false
             timerButton.setTitle("Resume", for: .normal)
             cancelButton.isEnabled = true
             timerButton.setTitleColor(.green, for: .normal)
@@ -79,7 +83,7 @@ class TimerViewController: UIViewController {
         }
     }
     
-    func updateTimerButtonUI(){
+    func updateTimerButtonUI() {
         if hmsTimer!.totalTimeInSec == 0 {
             timerButton.isEnabled = false
         } else {
@@ -93,6 +97,19 @@ class TimerViewController: UIViewController {
         let mString = m < 10 ? "0" + String(m) : String(m)
         let sString = s < 10 ? "0" + String(s) : String(s)
         timerLabel.text = "\(h <= 0 ? "" : hString + " : ")\(mString) : \(sString)"
+        
+        if hmsTimer!.intCounter >= hmsTimer!.totalTimeInSec {
+            return
+        }
+        
+        if hmsTimer!.totalTimeInSec != 0 {
+            updateCircularProgressUI()
+        }
+    }
+    
+    func updateCircularProgressUI() {
+        newAngleValue = 360 * (Double(hmsTimer!.intCounter) / Double(hmsTimer!.totalTimeInSec)) + initAngleValue
+        circularProgressView.animate(toAngle: newAngleValue, duration: 1, completion: nil)
     }
     
     func updateScheduledTimeLabelUI() {
@@ -104,11 +121,16 @@ class TimerViewController: UIViewController {
         scheduledTimeLabel.text = "\(curTimeH) : \(curTimeM < 10 ? "0" + String(curTimeM) : String(curTimeM))"
     }
     
-    func initializeTimer(){
+    func initializeTimer() {
         timer!.invalidate()
         hmsTimer!.setTimer()
         timerStatus = TimerStatus.Start
-        updateUI()
+        circularProgressView.animate(fromAngle: circularProgressView.angle, toAngle: 0, duration: 0.1, completion: nil)
+        initAngleValue = 0.0
+        newAngleValue = 0.0
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5, execute: {
+            self.updateUI()
+        })
     }
     
     @IBAction func timerButtonTapped(_ sender: UIButton) {
@@ -117,6 +139,8 @@ class TimerViewController: UIViewController {
         switch timerStatus {
         case TimerStatus.Start:
             timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateTimer), userInfo: nil, repeats: true)
+            initAngleValue = 360 * (1.0 / Double(hmsTimer!.totalTimeInSec))
+            circularProgressView.animate(toAngle: initAngleValue, duration: 1, completion: nil)
             timerStatus = TimerStatus.Pause
             
         case TimerStatus.Pause:
@@ -132,7 +156,7 @@ class TimerViewController: UIViewController {
         updateScheduledTimeLabelUI()
     }
     
-    @objc func updateTimer(){
+    @objc func updateTimer() {
         hmsTimer!.timerCountDown()
         updateTimerLabelUI()
         
