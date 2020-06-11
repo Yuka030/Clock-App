@@ -98,13 +98,10 @@
 		96A7CCA32481B7BC00A44854 /* ClockApp */ = {
 			isa = PBXGroup;
 			children = (
-				96A7CCA42481B7BC00A44854 /* AppDelegate.swift */,
-				96A7CCA62481B7BC00A44854 /* SceneDelegate.swift */,
+				B2336EB42492DB7400520DDE /* Supporting Files */,
 				B2334A4F2490C66000DB82AD /* View */,
 				B2A90DA12492BB6500E7FF10 /* WorldClock */,
 				B2334A4624909EF200DB82AD /* Timer */,
-				96A7CCAD2481B7BE00A44854 /* Assets.xcassets */,
-				96A7CCAF2481B7BE00A44854 /* LaunchScreen.storyboard */,
 				96A7CCB22481B7BE00A44854 /* Info.plist */,
 				96A7CCBA2481BDB100A44854 /* AlarmViewController.swift */,
 				96A7CCBC2481BDD200A44854 /* StopwatchViewController.swift */,
@@ -147,6 +144,17 @@
 				96A7CCAA2481B7BC00A44854 /* Main.storyboard */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		B2336EB42492DB7400520DDE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				96A7CCA42481B7BC00A44854 /* AppDelegate.swift */,
+				96A7CCA62481B7BC00A44854 /* SceneDelegate.swift */,
+				96A7CCAD2481B7BE00A44854 /* Assets.xcassets */,
+				96A7CCAF2481B7BE00A44854 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		B2A90DA12492BB6500E7FF10 /* WorldClock */ = {
