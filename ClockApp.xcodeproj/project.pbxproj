@@ -10,7 +10,6 @@
 		0F11FEB90133F58729350E29 /* Pods_ClockApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 176B990F940320A9FF82A4AD /* Pods_ClockApp.framework */; };
 		96A7CCA52481B7BC00A44854 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A7CCA42481B7BC00A44854 /* AppDelegate.swift */; };
 		96A7CCA72481B7BC00A44854 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A7CCA62481B7BC00A44854 /* SceneDelegate.swift */; };
-		96A7CCA92481B7BC00A44854 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A7CCA82481B7BC00A44854 /* ViewController.swift */; };
 		96A7CCAC2481B7BC00A44854 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96A7CCAA2481B7BC00A44854 /* Main.storyboard */; };
 		96A7CCAE2481B7BE00A44854 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96A7CCAD2481B7BE00A44854 /* Assets.xcassets */; };
 		96A7CCB12481B7BE00A44854 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96A7CCAF2481B7BE00A44854 /* LaunchScreen.storyboard */; };
@@ -36,7 +35,6 @@
 		96A7CCA12481B7BC00A44854 /* ClockApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClockApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96A7CCA42481B7BC00A44854 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96A7CCA62481B7BC00A44854 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		96A7CCA82481B7BC00A44854 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		96A7CCAB2481B7BC00A44854 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		96A7CCAD2481B7BE00A44854 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		96A7CCB02481B7BE00A44854 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -102,7 +100,6 @@
 			children = (
 				96A7CCA42481B7BC00A44854 /* AppDelegate.swift */,
 				96A7CCA62481B7BC00A44854 /* SceneDelegate.swift */,
-				96A7CCA82481B7BC00A44854 /* ViewController.swift */,
 				B2334A4F2490C66000DB82AD /* View */,
 				B2A90DA12492BB6500E7FF10 /* WorldClock */,
 				B2334A4624909EF200DB82AD /* Timer */,
@@ -311,7 +308,6 @@
 				B2A90DA62492BBD400E7FF10 /* Location.swift in Sources */,
 				96A7CCBF2481BDE000A44854 /* TimerViewController.swift in Sources */,
 				B2334A492490A5E900DB82AD /* HMSTimer.swift in Sources */,
-				96A7CCA92481B7BC00A44854 /* ViewController.swift in Sources */,
 				B2334A4324909EBE00DB82AD /* AddRingtoneTableViewController.swift in Sources */,
 				B2A90DA02492BB5A00E7FF10 /* TimeZonesTableViewCell.swift in Sources */,
 				B2334A4524909EE100DB82AD /* AddRingtoneTableViewCell.swift in Sources */,
