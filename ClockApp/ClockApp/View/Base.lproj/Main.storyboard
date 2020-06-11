@@ -496,11 +496,11 @@
             </objects>
             <point key="canvasLocation" x="3209" y="-800"/>
         </scene>
-        <!--Item-->
+        <!--World Clock-->
         <scene sceneID="osU-i4-brH">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3zf-YZ-MyD" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="XCl-wJ-Fld"/>
+                    <tabBarItem key="tabBarItem" title="World Clock" id="XCl-wJ-Fld"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="nqv-st-aaa">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -524,11 +524,11 @@
             </objects>
             <point key="canvasLocation" x="2061" y="19"/>
         </scene>
-        <!--Item-->
+        <!--Alarm-->
         <scene sceneID="lYs-Hs-tVK">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tr9-Nf-CgT" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="zfX-ws-eyr"/>
+                    <tabBarItem key="tabBarItem" title="Alarm" id="zfX-ws-eyr"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="LOj-11-K4z">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -543,11 +543,11 @@
             </objects>
             <point key="canvasLocation" x="2832" y="19"/>
         </scene>
-        <!--Item-->
+        <!--Stopwatch-->
         <scene sceneID="n0U-f5-h9E">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AOh-3V-Ulr" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="fcx-bv-jGs"/>
+                    <tabBarItem key="tabBarItem" title="Stopwatch" id="fcx-bv-jGs"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iGX-Fs-n6l">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -562,11 +562,11 @@
             </objects>
             <point key="canvasLocation" x="3581" y="19"/>
         </scene>
-        <!--Item-->
+        <!--Timer-->
         <scene sceneID="hGM-c5-C5a">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Zgn-ud-y10" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="2qF-cz-tNW"/>
+                    <tabBarItem key="tabBarItem" title="Timer" id="2qF-cz-tNW"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="twv-IY-wOd">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
