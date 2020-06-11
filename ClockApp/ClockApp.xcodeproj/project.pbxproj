@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -23,6 +23,12 @@
 		B2334A492490A5E900DB82AD /* HMSTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2334A482490A5E900DB82AD /* HMSTimer.swift */; };
 		B2334A4B2490A5FF00DB82AD /* TimeDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2334A4A2490A5FF00DB82AD /* TimeDataSource.swift */; };
 		B2334A4D2490A60F00DB82AD /* Ringtone.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2334A4C2490A60F00DB82AD /* Ringtone.swift */; };
+		B2A90D9A2492BB0900E7FF10 /* WorldClockTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A90D992492BB0900E7FF10 /* WorldClockTableViewController.swift */; };
+		B2A90D9C2492BB2C00E7FF10 /* WorldClockTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A90D9B2492BB2C00E7FF10 /* WorldClockTableViewCell.swift */; };
+		B2A90D9E2492BB4900E7FF10 /* TimeZonesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A90D9D2492BB4900E7FF10 /* TimeZonesTableViewController.swift */; };
+		B2A90DA02492BB5A00E7FF10 /* TimeZonesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A90D9F2492BB5A00E7FF10 /* TimeZonesTableViewCell.swift */; };
+		B2A90DA42492BBBB00E7FF10 /* WorldClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A90DA32492BBBB00E7FF10 /* WorldClock.swift */; };
+		B2A90DA62492BBD400E7FF10 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A90DA52492BBD400E7FF10 /* Location.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +51,12 @@
 		B2334A482490A5E900DB82AD /* HMSTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMSTimer.swift; sourceTree = "<group>"; };
 		B2334A4A2490A5FF00DB82AD /* TimeDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeDataSource.swift; sourceTree = "<group>"; };
 		B2334A4C2490A60F00DB82AD /* Ringtone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ringtone.swift; sourceTree = "<group>"; };
+		B2A90D992492BB0900E7FF10 /* WorldClockTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldClockTableViewController.swift; sourceTree = "<group>"; };
+		B2A90D9B2492BB2C00E7FF10 /* WorldClockTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldClockTableViewCell.swift; sourceTree = "<group>"; };
+		B2A90D9D2492BB4900E7FF10 /* TimeZonesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeZonesTableViewController.swift; sourceTree = "<group>"; };
+		B2A90D9F2492BB5A00E7FF10 /* TimeZonesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeZonesTableViewCell.swift; sourceTree = "<group>"; };
+		B2A90DA32492BBBB00E7FF10 /* WorldClock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldClock.swift; sourceTree = "<group>"; };
+		B2A90DA52492BBD400E7FF10 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		C78D5C4260B4B14501A5FADC /* Pods-ClockApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClockApp.release.xcconfig"; path = "Target Support Files/Pods-ClockApp/Pods-ClockApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -66,7 +78,6 @@
 				8084857EB8A3890E7FEEE4C4 /* Pods-ClockApp.debug.xcconfig */,
 				C78D5C4260B4B14501A5FADC /* Pods-ClockApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -95,6 +106,7 @@
 				96A7CCA62481B7BC00A44854 /* SceneDelegate.swift */,
 				96A7CCA82481B7BC00A44854 /* ViewController.swift */,
 				B2334A4F2490C66000DB82AD /* View */,
+				B2A90DA12492BB6500E7FF10 /* WorldClock */,
 				B2334A4624909EF200DB82AD /* Timer */,
 				96A7CCAD2481B7BE00A44854 /* Assets.xcassets */,
 				96A7CCAF2481B7BE00A44854 /* LaunchScreen.storyboard */,
@@ -141,6 +153,35 @@
 				96A7CCAA2481B7BC00A44854 /* Main.storyboard */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		B2A90DA12492BB6500E7FF10 /* WorldClock */ = {
+			isa = PBXGroup;
+			children = (
+				B2A90DA22492BB7A00E7FF10 /* Controller */,
+				B2A90DA72492BBDA00E7FF10 /* Model */,
+			);
+			path = WorldClock;
+			sourceTree = "<group>";
+		};
+		B2A90DA22492BB7A00E7FF10 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B2A90D992492BB0900E7FF10 /* WorldClockTableViewController.swift */,
+				B2A90D9B2492BB2C00E7FF10 /* WorldClockTableViewCell.swift */,
+				B2A90D9D2492BB4900E7FF10 /* TimeZonesTableViewController.swift */,
+				B2A90D9F2492BB5A00E7FF10 /* TimeZonesTableViewCell.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B2A90DA72492BBDA00E7FF10 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B2A90DA32492BBBB00E7FF10 /* WorldClock.swift */,
+				B2A90DA52492BBD400E7FF10 /* Location.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		C1AEA863F8DADEA49FBD920D /* Frameworks */ = {
@@ -266,18 +307,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2A90D9E2492BB4900E7FF10 /* TimeZonesTableViewController.swift in Sources */,
+				B2A90DA42492BBBB00E7FF10 /* WorldClock.swift in Sources */,
 				96A7CCBD2481BDD200A44854 /* StopwatchViewController.swift in Sources */,
 				96A7CCBB2481BDB100A44854 /* AlarmViewController.swift in Sources */,
+				B2A90DA62492BBD400E7FF10 /* Location.swift in Sources */,
 				96A7CCB92481BD9E00A44854 /* WorldClockViewController.swift in Sources */,
 				96A7CCBF2481BDE000A44854 /* TimerViewController.swift in Sources */,
 				B2334A492490A5E900DB82AD /* HMSTimer.swift in Sources */,
 				96A7CCA92481B7BC00A44854 /* ViewController.swift in Sources */,
 				B2334A4324909EBE00DB82AD /* AddRingtoneTableViewController.swift in Sources */,
+				B2A90DA02492BB5A00E7FF10 /* TimeZonesTableViewCell.swift in Sources */,
 				B2334A4524909EE100DB82AD /* AddRingtoneTableViewCell.swift in Sources */,
+				B2A90D9A2492BB0900E7FF10 /* WorldClockTableViewController.swift in Sources */,
 				96A7CCA52481B7BC00A44854 /* AppDelegate.swift in Sources */,
 				B2334A4B2490A5FF00DB82AD /* TimeDataSource.swift in Sources */,
 				96A7CCA72481B7BC00A44854 /* SceneDelegate.swift in Sources */,
 				B2334A4D2490A60F00DB82AD /* Ringtone.swift in Sources */,
+				B2A90D9C2492BB2C00E7FF10 /* WorldClockTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
