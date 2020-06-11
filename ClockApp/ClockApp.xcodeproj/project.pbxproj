@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F11FEB90133F58729350E29 /* Pods_ClockApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 176B990F940320A9FF82A4AD /* Pods_ClockApp.framework */; };
 		96A7CCA52481B7BC00A44854 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A7CCA42481B7BC00A44854 /* AppDelegate.swift */; };
 		96A7CCA72481B7BC00A44854 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A7CCA62481B7BC00A44854 /* SceneDelegate.swift */; };
 		96A7CCA92481B7BC00A44854 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A7CCA82481B7BC00A44854 /* ViewController.swift */; };
@@ -17,9 +18,16 @@
 		96A7CCBB2481BDB100A44854 /* AlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A7CCBA2481BDB100A44854 /* AlarmViewController.swift */; };
 		96A7CCBD2481BDD200A44854 /* StopwatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A7CCBC2481BDD200A44854 /* StopwatchViewController.swift */; };
 		96A7CCBF2481BDE000A44854 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A7CCBE2481BDDF00A44854 /* TimerViewController.swift */; };
+		B2334A4324909EBE00DB82AD /* AddRingtoneTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2334A4224909EBE00DB82AD /* AddRingtoneTableViewController.swift */; };
+		B2334A4524909EE100DB82AD /* AddRingtoneTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2334A4424909EE100DB82AD /* AddRingtoneTableViewCell.swift */; };
+		B2334A492490A5E900DB82AD /* HMSTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2334A482490A5E900DB82AD /* HMSTimer.swift */; };
+		B2334A4B2490A5FF00DB82AD /* TimeDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2334A4A2490A5FF00DB82AD /* TimeDataSource.swift */; };
+		B2334A4D2490A60F00DB82AD /* Ringtone.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2334A4C2490A60F00DB82AD /* Ringtone.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		176B990F940320A9FF82A4AD /* Pods_ClockApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClockApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8084857EB8A3890E7FEEE4C4 /* Pods-ClockApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClockApp.debug.xcconfig"; path = "Target Support Files/Pods-ClockApp/Pods-ClockApp.debug.xcconfig"; sourceTree = "<group>"; };
 		96A7CCA12481B7BC00A44854 /* ClockApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClockApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96A7CCA42481B7BC00A44854 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96A7CCA62481B7BC00A44854 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,6 +40,12 @@
 		96A7CCBA2481BDB100A44854 /* AlarmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmViewController.swift; sourceTree = "<group>"; };
 		96A7CCBC2481BDD200A44854 /* StopwatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchViewController.swift; sourceTree = "<group>"; };
 		96A7CCBE2481BDDF00A44854 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
+		B2334A4224909EBE00DB82AD /* AddRingtoneTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRingtoneTableViewController.swift; sourceTree = "<group>"; };
+		B2334A4424909EE100DB82AD /* AddRingtoneTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRingtoneTableViewCell.swift; sourceTree = "<group>"; };
+		B2334A482490A5E900DB82AD /* HMSTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMSTimer.swift; sourceTree = "<group>"; };
+		B2334A4A2490A5FF00DB82AD /* TimeDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeDataSource.swift; sourceTree = "<group>"; };
+		B2334A4C2490A60F00DB82AD /* Ringtone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ringtone.swift; sourceTree = "<group>"; };
+		C78D5C4260B4B14501A5FADC /* Pods-ClockApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClockApp.release.xcconfig"; path = "Target Support Files/Pods-ClockApp/Pods-ClockApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,17 +53,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F11FEB90133F58729350E29 /* Pods_ClockApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		88A01BE505B8E2042A5EB3C2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8084857EB8A3890E7FEEE4C4 /* Pods-ClockApp.debug.xcconfig */,
+				C78D5C4260B4B14501A5FADC /* Pods-ClockApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		96A7CC982481B7BC00A44854 = {
 			isa = PBXGroup;
 			children = (
 				96A7CCA32481B7BC00A44854 /* ClockApp */,
 				96A7CCA22481B7BC00A44854 /* Products */,
+				88A01BE505B8E2042A5EB3C2 /* Pods */,
+				C1AEA863F8DADEA49FBD920D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,16 +94,61 @@
 				96A7CCA42481B7BC00A44854 /* AppDelegate.swift */,
 				96A7CCA62481B7BC00A44854 /* SceneDelegate.swift */,
 				96A7CCA82481B7BC00A44854 /* ViewController.swift */,
-				96A7CCAA2481B7BC00A44854 /* Main.storyboard */,
+				B2334A4F2490C66000DB82AD /* View */,
+				B2334A4624909EF200DB82AD /* Timer */,
 				96A7CCAD2481B7BE00A44854 /* Assets.xcassets */,
 				96A7CCAF2481B7BE00A44854 /* LaunchScreen.storyboard */,
 				96A7CCB22481B7BE00A44854 /* Info.plist */,
 				96A7CCB82481BD9E00A44854 /* WorldClockViewController.swift */,
 				96A7CCBA2481BDB100A44854 /* AlarmViewController.swift */,
 				96A7CCBC2481BDD200A44854 /* StopwatchViewController.swift */,
-				96A7CCBE2481BDDF00A44854 /* TimerViewController.swift */,
 			);
 			path = ClockApp;
+			sourceTree = "<group>";
+		};
+		B2334A4624909EF200DB82AD /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				B2334A4E2490A61900DB82AD /* Model */,
+				B2334A472490A59400DB82AD /* Controller */,
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
+		B2334A472490A59400DB82AD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B2334A4224909EBE00DB82AD /* AddRingtoneTableViewController.swift */,
+				B2334A4424909EE100DB82AD /* AddRingtoneTableViewCell.swift */,
+				96A7CCBE2481BDDF00A44854 /* TimerViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B2334A4E2490A61900DB82AD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B2334A482490A5E900DB82AD /* HMSTimer.swift */,
+				B2334A4A2490A5FF00DB82AD /* TimeDataSource.swift */,
+				B2334A4C2490A60F00DB82AD /* Ringtone.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B2334A4F2490C66000DB82AD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				96A7CCAA2481B7BC00A44854 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C1AEA863F8DADEA49FBD920D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				176B990F940320A9FF82A4AD /* Pods_ClockApp.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,9 +158,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 96A7CCB52481B7BE00A44854 /* Build configuration list for PBXNativeTarget "ClockApp" */;
 			buildPhases = (
+				ECC7ABDF20DF10BEC752F2A1 /* [CP] Check Pods Manifest.lock */,
 				96A7CC9D2481B7BC00A44854 /* Sources */,
 				96A7CC9E2481B7BC00A44854 /* Frameworks */,
 				96A7CC9F2481B7BC00A44854 /* Resources */,
+				F14C6D6E86A2972C95E35D6E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -145,6 +219,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		ECC7ABDF20DF10BEC752F2A1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ClockApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F14C6D6E86A2972C95E35D6E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ClockApp/Pods-ClockApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ClockApp/Pods-ClockApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ClockApp/Pods-ClockApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		96A7CC9D2481B7BC00A44854 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -154,9 +270,14 @@
 				96A7CCBB2481BDB100A44854 /* AlarmViewController.swift in Sources */,
 				96A7CCB92481BD9E00A44854 /* WorldClockViewController.swift in Sources */,
 				96A7CCBF2481BDE000A44854 /* TimerViewController.swift in Sources */,
+				B2334A492490A5E900DB82AD /* HMSTimer.swift in Sources */,
 				96A7CCA92481B7BC00A44854 /* ViewController.swift in Sources */,
+				B2334A4324909EBE00DB82AD /* AddRingtoneTableViewController.swift in Sources */,
+				B2334A4524909EE100DB82AD /* AddRingtoneTableViewCell.swift in Sources */,
 				96A7CCA52481B7BC00A44854 /* AppDelegate.swift in Sources */,
+				B2334A4B2490A5FF00DB82AD /* TimeDataSource.swift in Sources */,
 				96A7CCA72481B7BC00A44854 /* SceneDelegate.swift in Sources */,
+				B2334A4D2490A60F00DB82AD /* Ringtone.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +419,7 @@
 		};
 		96A7CCB62481B7BE00A44854 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8084857EB8A3890E7FEEE4C4 /* Pods-ClockApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -316,6 +438,7 @@
 		};
 		96A7CCB72481B7BE00A44854 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C78D5C4260B4B14501A5FADC /* Pods-ClockApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
