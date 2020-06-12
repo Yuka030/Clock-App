@@ -17,6 +17,7 @@ class RightDetailTableViewCell: UITableViewCell {
     
     convenience init(title: String){
         self.init(style: .value1, reuseIdentifier: nil)
+        textLabel?.textColor = .white
         textLabel?.text = title
     }
     

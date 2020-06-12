@@ -12,11 +12,9 @@ protocol SelectSoundTableViewControllerDelegate: class {
 }
 
 class SelectSoundTableViewController: UITableViewController {
-    
     weak var delegate: SelectSoundTableViewControllerDelegate?
-    
+
     var choosed = 0
-    
     private let cellId = "SoundCell"
     var sound: Sound?
     
@@ -25,7 +23,8 @@ class SelectSoundTableViewController: UITableViewController {
         navigationItem.title = "Select Sound"
         tableView.register(RightDetailTableViewCell.self, forCellReuseIdentifier: cellId)
         tableView.tableFooterView = UIView()
-        
+        tableView.tintColor = .orange
+        tableView.backgroundColor = .black
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -34,6 +33,10 @@ class SelectSoundTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath)
+        cell.backgroundColor = .darkGray
+        cell.textLabel?.textColor = .white
+        
+        
         let sounds = Sound.all[indexPath.row]
        
         cell.textLabel?.text = sounds.soundName
@@ -53,5 +56,4 @@ class SelectSoundTableViewController: UITableViewController {
         delegate?.didSelect(sounds: sound!)
         tableView.reloadData()
     }
-    
 }

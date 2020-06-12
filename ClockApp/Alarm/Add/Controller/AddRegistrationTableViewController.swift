@@ -18,6 +18,7 @@ class AddRegistrationTableViewController: UITableViewController, SelectSoundTabl
         let cell = RightDetailTableViewCell(title: "Repeat")
         cell.accessoryType = .disclosureIndicator
         cell.detailTextLabel?.text = "Never"
+        cell.backgroundColor = .darkGray
         return cell
     }()
     
@@ -25,6 +26,7 @@ class AddRegistrationTableViewController: UITableViewController, SelectSoundTabl
         let cell = RightDetailTableViewCell(title: "Label")
         cell.accessoryType = .disclosureIndicator
         cell.detailTextLabel?.text = "Alarm"
+        cell.backgroundColor = .darkGray
         return cell
     }()
     
@@ -34,24 +36,30 @@ class AddRegistrationTableViewController: UITableViewController, SelectSoundTabl
         let cell = RightDetailTableViewCell(title: "Sound")
         cell.accessoryType = .disclosureIndicator
         cell.detailTextLabel?.text = "Radar"
+        cell.backgroundColor = .darkGray
         return cell
     }()
     
-    private let snoozeCell = SwitchTableViewCell(category: "Snooze")
+    
+    private let snoozeCell : SwitchTableViewCell = {
+        let cell = SwitchTableViewCell(category: "Snooze")
+        cell.backgroundColor = .darkGray
+        return cell
+    }()
     
     //Este es el Delegate para almacenar la informacion
     var addRegistration: ((Registration) -> ())?
-    
     private var sound: Sound?
     private var day: [String]?
-    
     
     // Este es el ViewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.backgroundColor = .black
+        tableView.contentInsetAdjustmentBehavior = .never
+        tableView.backgroundColor = .darkText
         let nav = self.navigationController?.navigationBar
         nav?.tintColor = .orange
+        nav?.backgroundColor = .black
         nav?.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
         navigationItem.title = "Add Alarm"
         navigationItem.leftBarButtonItem =  UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(cancelTapped(_:)))
@@ -59,7 +67,6 @@ class AddRegistrationTableViewController: UITableViewController, SelectSoundTabl
         updateSound()
         updateDays()
     }
-    
     
     private func updateSound(){
         if let sound = self.sound {
@@ -89,13 +96,11 @@ class AddRegistrationTableViewController: UITableViewController, SelectSoundTabl
             self.day = day
             updateDays()
         }
-        
-        
+         
         func didSelect(sounds: Sound) {
             self.sound = sounds
             updateSound()
         }
-        
         
         // Funcion cuando se presiona el boton de Cancelar
         @objc func cancelTapped(_ sender: UIBarButtonItem){
@@ -108,25 +113,23 @@ class AddRegistrationTableViewController: UITableViewController, SelectSoundTabl
             let snooze = snoozeCell.isOn
             //let name = alarmName.textInput.text!
             let name = nametxt.textInput.text!
-            
             let soundObj = Sound(soundName: "Radar")
             
-            
-            let registration = Registration(time: time,
+            let registration = Registration(time:time,
                                             day: day ?? [],
                                             name:  name ,
                                             sound: sound ?? soundObj,
                                             snooze: snooze)
             addRegistration?(registration)
             dismiss(animated: true, completion: nil)
-            //print(registration)
-            print("Time: \(time)")
-            print("Days: \(day ?? [])")
-            print("Name: \(name)")
-            print(sound ?? soundObj)
-            print("Snooze: \(snooze)")
+            print(registration)
+            print("")
+//            print("Time: \(time)")
+//            print("Days: \(day ?? [])")
+//            print("Name: \(name)")
+//            print(sound ?? soundObj)
+//            print("Snooze: \(snooze)")
         }
-        
         
         // Aca va el numero de secciones en el TableView
         override func numberOfSections(in tableView: UITableView) -> Int {
@@ -150,13 +153,11 @@ class AddRegistrationTableViewController: UITableViewController, SelectSoundTabl
             case(0,2):
                 let alarmNameTVC = AlarmNameTableViewController()
                 navigationController?.pushViewController(alarmNameTVC, animated: true)
-                
             case (0,3):
                 let selectSoundTVC =  SelectSoundTableViewController()
                 selectSoundTVC.delegate = self
                 selectSoundTVC.sound = sound
                 navigationController?.pushViewController(selectSoundTVC, animated: true)
-                
             default:
                 break
             }
@@ -184,10 +185,9 @@ class AddRegistrationTableViewController: UITableViewController, SelectSoundTabl
         override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
             switch indexPath.row {
             case 0:
-                return 190
+                return 230
             default:
                 return  44
             }
         }
-        
 }

@@ -9,28 +9,28 @@
 import UIKit
 
 class AlarmNameTableViewCell: UITableViewCell {
+    let topView = UIView()
     
     let textInput: UITextView = {
         let textView = UITextView()
         textView.translatesAutoresizingMaskIntoConstraints = false
         textView.font = UIFont.systemFont(ofSize: 17)
         textView.isScrollEnabled = false
-        textView.text = "Alarm"
+        textView.text = "   Alarm"
+        textView.textColor = .white
+        textView.backgroundColor = .darkGray
         return textView
     }()
     
     var textStr: String {
       return textInput.text!
     }
-    
-    
+
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: .value1, reuseIdentifier: reuseIdentifier)
         contentView.addSubview(textInput)
         textInput.matchParentText()
     }
-
-    
 
     required init?(coder: NSCoder) {
         fatalError()

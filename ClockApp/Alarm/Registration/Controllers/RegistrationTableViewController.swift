@@ -6,16 +6,17 @@
 //  Copyright © 2020 Diego Espinosa. All rights reserved.
 //
 
+
 import UIKit
+import UserNotifications
 
 class RegistrationTableViewController: UITableViewController {
-    
     private let cellId = "RegistrationCell"
-    
     private var registrations = [Registration]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound], completionHandler: {didAlow, error in})
         tableView.backgroundColor = .black
         let nav = self.navigationController?.navigationBar
         nav?.tintColor = .orange
@@ -27,7 +28,6 @@ class RegistrationTableViewController: UITableViewController {
         navigationItem.leftBarButtonItem = editButtonItem
         tableView.tableFooterView = UIView() // only divisors to cells in use 
     }
-    
     
     @objc func addNewRegistrationTVC(_ sender: UIBarButtonItem){
         let addRegistrationTVC = AddRegistrationTableViewController(style: .grouped) //static table view
@@ -42,11 +42,17 @@ class RegistrationTableViewController: UITableViewController {
     }
     
     @objc func switchChanged(_ sender : UISwitch!){
-        print("The switch is \(sender.isOn ? "ON" : "OFF")")
+        if sender.isOn {
+        let content = UNMutableNotificationContent()
+        content.title = "Alarm"
+        content.sound = .default
         
-        
+            
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 60, repeats: false)
+        let request = UNNotificationRequest(identifier: "timmerDone", content: content, trigger: trigger)
+        UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
+        }
     }
-    
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return registrations.count
@@ -76,19 +82,15 @@ class RegistrationTableViewController: UITableViewController {
             }
         }
         
-        
-        
         cell.detailTextLabel?.textColor = .white
         cell.backgroundColor = .black
-        
         
         let switchView = UISwitch(frame: .zero)
         switchView.setOn(false, animated: true)
         switchView.tag = indexPath.row // for detect which row switch Changed
         switchView.addTarget(self, action: #selector(self.switchChanged(_:)), for: .valueChanged)
         cell.accessoryView = switchView
-        
-        
+                
         return cell
     }
     
@@ -104,5 +106,4 @@ class RegistrationTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100
     }
-    
 }

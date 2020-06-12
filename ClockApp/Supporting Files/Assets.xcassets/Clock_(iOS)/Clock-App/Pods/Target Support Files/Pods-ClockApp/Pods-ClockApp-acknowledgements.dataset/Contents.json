@@ -1,0 +1,12 @@
+{
+  "data" : [
+    {
+      "filename" : "Pods-ClockApp-acknowledgements.markdown",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

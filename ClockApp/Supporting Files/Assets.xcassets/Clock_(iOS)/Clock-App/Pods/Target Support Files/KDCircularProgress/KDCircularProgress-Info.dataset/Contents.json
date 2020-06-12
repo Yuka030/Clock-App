@@ -1,0 +1,12 @@
+{
+  "data" : [
+    {
+      "filename" : "KDCircularProgress-Info.plist",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

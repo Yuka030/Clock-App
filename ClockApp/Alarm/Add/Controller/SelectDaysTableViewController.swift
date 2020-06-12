@@ -25,6 +25,8 @@ class SelectDaysTableViewController: UITableViewController {
         navigationItem.title = "Repeat"
         tableView.register(RightDetailTableViewCell.self, forCellReuseIdentifier: cellId)
         tableView.tableFooterView = UIView()
+        tableView.tintColor = .orange
+        tableView.backgroundColor = .black
     }
 
     
@@ -40,6 +42,8 @@ class SelectDaysTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell =  tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as! RightDetailTableViewCell
+        cell.backgroundColor = .darkGray
+        cell.textLabel?.textColor = .white
         
         switch indexPath.row {
         case 1:

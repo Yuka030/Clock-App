@@ -14,6 +14,7 @@ class SwitchTableViewCell: UITableViewCell {
         let lb = UILabel()
         lb.translatesAutoresizingMaskIntoConstraints = false
         lb.setContentHuggingPriority(.defaultHigh, for: .horizontal)
+        lb.textColor = .white
         return lb
     }()
     
@@ -33,7 +34,6 @@ class SwitchTableViewCell: UITableViewCell {
     var isOn: Bool {
         return switchControl.isOn
     }
-    
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)

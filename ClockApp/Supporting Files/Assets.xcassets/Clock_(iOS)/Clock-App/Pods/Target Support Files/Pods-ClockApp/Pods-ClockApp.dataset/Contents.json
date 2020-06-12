@@ -1,0 +1,12 @@
+{
+  "data" : [
+    {
+      "filename" : "Pods-ClockApp.modulemap",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

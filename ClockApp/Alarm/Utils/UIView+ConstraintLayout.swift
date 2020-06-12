@@ -38,7 +38,7 @@ extension UIView {
                self.bottomAnchor.constraint(equalTo: superBottomAnchor, constant: -padding.bottom).isActive = true
            }
            if let superLeadingAnchor = superview?.leadingAnchor {
-               self.leadingAnchor.constraint(equalTo: superLeadingAnchor, constant: padding.left + 15).isActive = true
+               self.leadingAnchor.constraint(equalTo: superLeadingAnchor, constant: padding.left).isActive = true
            }
            if let superTrailingAnchor = superview?.trailingAnchor {
                self.trailingAnchor.constraint(equalTo: superTrailingAnchor, constant: -padding.right).isActive = true

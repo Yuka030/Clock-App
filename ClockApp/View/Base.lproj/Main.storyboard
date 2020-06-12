@@ -182,14 +182,14 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AddRingtoneCell" id="d9M-2c-6rG" customClass="AddRingtoneTableViewCell" customModule="ClockApp" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="42"/>
+                                <rect key="frame" x="0.0" y="28" width="414" height="42.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="d9M-2c-6rG" id="dVp-Vr-qKq">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="42"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="42.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rader(Default)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aLZ-iR-Dyl">
-                                            <rect key="frame" x="20" y="10" width="374" height="22"/>
+                                            <rect key="frame" x="20" y="10" width="374" height="22.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
@@ -513,7 +513,7 @@
         <scene sceneID="osU-i4-brH">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3zf-YZ-MyD" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="World Clock" id="XCl-wJ-Fld"/>
+                    <tabBarItem key="tabBarItem" title="World Clock" image="globe" catalog="system" id="XCl-wJ-Fld"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="nqv-st-aaa">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -541,7 +541,7 @@
         <scene sceneID="lYs-Hs-tVK">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tr9-Nf-CgT" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Alarm" id="zfX-ws-eyr"/>
+                    <tabBarItem key="tabBarItem" title="Alarm" image="alarm.fill" catalog="system" id="zfX-ws-eyr"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="LOj-11-K4z">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -569,7 +569,7 @@
         <scene sceneID="n0U-f5-h9E">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AOh-3V-Ulr" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Stopwatch" id="fcx-bv-jGs"/>
+                    <tabBarItem key="tabBarItem" title="Stopwatch" image="stopwatch.fill" catalog="system" id="fcx-bv-jGs"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iGX-Fs-n6l">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -597,7 +597,7 @@
         <scene sceneID="hGM-c5-C5a">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Zgn-ud-y10" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Timer" id="2qF-cz-tNW"/>
+                    <tabBarItem key="tabBarItem" title="Timer" image="timer" catalog="system" id="2qF-cz-tNW"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="twv-IY-wOd">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -649,4 +649,10 @@
             <point key="canvasLocation" x="4357.971014492754" y="1453.7946428571429"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="alarm.fill" catalog="system" width="124" height="128"/>
+        <image name="globe" catalog="system" width="128" height="121"/>
+        <image name="stopwatch.fill" catalog="system" width="121" height="128"/>
+        <image name="timer" catalog="system" width="128" height="121"/>
+    </resources>
 </document>
