@@ -7,22 +7,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="2M6-Mx-cDl">
-            <objects>
-                <viewController id="ltA-yB-BVy" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="AHX-6k-fw6">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="fO7-VL-eui"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="UWl-OG-TXb"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9yK-kS-kSQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2832" y="706"/>
-        </scene>
         <!--Timer View Controller-->
         <scene sceneID="Vkb-n6-i0g">
             <objects>
@@ -198,14 +182,14 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AddRingtoneCell" id="d9M-2c-6rG" customClass="AddRingtoneTableViewCell" customModule="ClockApp" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="42.5"/>
+                                <rect key="frame" x="0.0" y="28" width="414" height="42"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="d9M-2c-6rG" id="dVp-Vr-qKq">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="42.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="42"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rader(Default)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aLZ-iR-Dyl">
-                                            <rect key="frame" x="20" y="10" width="374" height="22.5"/>
+                                            <rect key="frame" x="20" y="10" width="374" height="22"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
@@ -379,7 +363,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lYw-7J-E2t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2060.8695652173915" y="705.80357142857144"/>
+            <point key="canvasLocation" x="2061" y="717"/>
         </scene>
         <!--Time Zones Table View Controller-->
         <scene sceneID="dKu-ls-Xld">
@@ -470,7 +454,36 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vyf-AT-HNK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="sa3-NW-de9" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2065.217391304348" y="1392.8571428571429"/>
+            <point key="canvasLocation" x="2061" y="1404"/>
+        </scene>
+        <!--Registration Table View Controller-->
+        <scene sceneID="ENp-qA-94N">
+            <objects>
+                <tableViewController id="fjF-ta-zgG" customClass="RegistrationTableViewController" customModule="ClockApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="aaa-ga-WMZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="RP0-cD-1md">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RP0-cD-1md" id="Xkc-nm-QtA">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="fjF-ta-zgG" id="Pif-af-mQQ"/>
+                            <outlet property="delegate" destination="fjF-ta-zgG" id="dns-l4-gLC"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="RSV-CV-8mQ"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KF7-yu-t60" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2832" y="717"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="bj8-1o-cpv">
@@ -545,7 +558,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="ltA-yB-BVy" kind="relationship" relationship="rootViewController" id="MWU-M7-87Q"/>
+                        <segue destination="fjF-ta-zgG" kind="relationship" relationship="rootViewController" id="JY9-UA-ews"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t7E-Oj-RT2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

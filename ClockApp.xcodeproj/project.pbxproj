@@ -21,6 +21,20 @@
 		B2334A492490A5E900DB82AD /* HMSTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2334A482490A5E900DB82AD /* HMSTimer.swift */; };
 		B2334A4B2490A5FF00DB82AD /* TimeDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2334A4A2490A5FF00DB82AD /* TimeDataSource.swift */; };
 		B2334A4D2490A60F00DB82AD /* Ringtone.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2334A4C2490A60F00DB82AD /* Ringtone.swift */; };
+		B245F36F2493F2B500F21388 /* AddRegistrationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B245F3662493F2B500F21388 /* AddRegistrationTableViewController.swift */; };
+		B245F3702493F2B500F21388 /* SelectSoundTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B245F3672493F2B500F21388 /* SelectSoundTableViewController.swift */; };
+		B245F3712493F2B500F21388 /* SelectDaysTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B245F3682493F2B500F21388 /* SelectDaysTableViewController.swift */; };
+		B245F3722493F2B500F21388 /* AlarmNameTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B245F3692493F2B500F21388 /* AlarmNameTableViewController.swift */; };
+		B245F3732493F2B500F21388 /* DatePickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B245F36B2493F2B500F21388 /* DatePickerTableViewCell.swift */; };
+		B245F3742493F2B500F21388 /* RightDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B245F36C2493F2B500F21388 /* RightDetailTableViewCell.swift */; };
+		B245F3752493F2B500F21388 /* AlarmNameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B245F36D2493F2B500F21388 /* AlarmNameTableViewCell.swift */; };
+		B245F3762493F2B500F21388 /* SwitchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B245F36E2493F2B500F21388 /* SwitchTableViewCell.swift */; };
+		B245F37F2493F2CB00F21388 /* sounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = B245F3792493F2CB00F21388 /* sounds.swift */; };
+		B245F3802493F2CB00F21388 /* Registration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B245F37A2493F2CB00F21388 /* Registration.swift */; };
+		B245F3812493F2CB00F21388 /* RegistrationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B245F37C2493F2CB00F21388 /* RegistrationTableViewController.swift */; };
+		B245F3822493F2CB00F21388 /* RegistrationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B245F37E2493F2CB00F21388 /* RegistrationTableViewCell.swift */; };
+		B245F3862493F2EA00F21388 /* HorizontalStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B245F3842493F2EA00F21388 /* HorizontalStackView.swift */; };
+		B245F3872493F2EA00F21388 /* UIView+ConstraintLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B245F3852493F2EA00F21388 /* UIView+ConstraintLayout.swift */; };
 		B2A90D9A2492BB0900E7FF10 /* WorldClockTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A90D992492BB0900E7FF10 /* WorldClockTableViewController.swift */; };
 		B2A90D9C2492BB2C00E7FF10 /* WorldClockTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A90D9B2492BB2C00E7FF10 /* WorldClockTableViewCell.swift */; };
 		B2A90D9E2492BB4900E7FF10 /* TimeZonesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A90D9D2492BB4900E7FF10 /* TimeZonesTableViewController.swift */; };
@@ -47,6 +61,20 @@
 		B2334A482490A5E900DB82AD /* HMSTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMSTimer.swift; sourceTree = "<group>"; };
 		B2334A4A2490A5FF00DB82AD /* TimeDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeDataSource.swift; sourceTree = "<group>"; };
 		B2334A4C2490A60F00DB82AD /* Ringtone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ringtone.swift; sourceTree = "<group>"; };
+		B245F3662493F2B500F21388 /* AddRegistrationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddRegistrationTableViewController.swift; sourceTree = "<group>"; };
+		B245F3672493F2B500F21388 /* SelectSoundTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectSoundTableViewController.swift; sourceTree = "<group>"; };
+		B245F3682493F2B500F21388 /* SelectDaysTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectDaysTableViewController.swift; sourceTree = "<group>"; };
+		B245F3692493F2B500F21388 /* AlarmNameTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmNameTableViewController.swift; sourceTree = "<group>"; };
+		B245F36B2493F2B500F21388 /* DatePickerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerTableViewCell.swift; sourceTree = "<group>"; };
+		B245F36C2493F2B500F21388 /* RightDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightDetailTableViewCell.swift; sourceTree = "<group>"; };
+		B245F36D2493F2B500F21388 /* AlarmNameTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmNameTableViewCell.swift; sourceTree = "<group>"; };
+		B245F36E2493F2B500F21388 /* SwitchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchTableViewCell.swift; sourceTree = "<group>"; };
+		B245F3792493F2CB00F21388 /* sounds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sounds.swift; sourceTree = "<group>"; };
+		B245F37A2493F2CB00F21388 /* Registration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Registration.swift; sourceTree = "<group>"; };
+		B245F37C2493F2CB00F21388 /* RegistrationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationTableViewController.swift; sourceTree = "<group>"; };
+		B245F37E2493F2CB00F21388 /* RegistrationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationTableViewCell.swift; sourceTree = "<group>"; };
+		B245F3842493F2EA00F21388 /* HorizontalStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalStackView.swift; sourceTree = "<group>"; };
+		B245F3852493F2EA00F21388 /* UIView+ConstraintLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+ConstraintLayout.swift"; sourceTree = "<group>"; };
 		B2A90D992492BB0900E7FF10 /* WorldClockTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldClockTableViewController.swift; sourceTree = "<group>"; };
 		B2A90D9B2492BB2C00E7FF10 /* WorldClockTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldClockTableViewCell.swift; sourceTree = "<group>"; };
 		B2A90D9D2492BB4900E7FF10 /* TimeZonesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeZonesTableViewController.swift; sourceTree = "<group>"; };
@@ -105,6 +133,7 @@
 				96A7CCB22481B7BE00A44854 /* Info.plist */,
 				96A7CCBA2481BDB100A44854 /* AlarmViewController.swift */,
 				96A7CCBC2481BDD200A44854 /* StopwatchViewController.swift */,
+				B245F35D2493F0AA00F21388 /* Alarm */,
 			);
 			path = ClockApp;
 			sourceTree = "<group>";
@@ -155,6 +184,91 @@
 				96A7CCAF2481B7BE00A44854 /* LaunchScreen.storyboard */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B245F35D2493F0AA00F21388 /* Alarm */ = {
+			isa = PBXGroup;
+			children = (
+				B245F3832493F2EA00F21388 /* Utils */,
+				B245F3772493F2CB00F21388 /* Registration */,
+				B245F3642493F2B500F21388 /* Add */,
+			);
+			path = Alarm;
+			sourceTree = "<group>";
+		};
+		B245F3642493F2B500F21388 /* Add */ = {
+			isa = PBXGroup;
+			children = (
+				B245F3652493F2B500F21388 /* Controller */,
+				B245F36A2493F2B500F21388 /* Views */,
+			);
+			path = Add;
+			sourceTree = "<group>";
+		};
+		B245F3652493F2B500F21388 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B245F3662493F2B500F21388 /* AddRegistrationTableViewController.swift */,
+				B245F3672493F2B500F21388 /* SelectSoundTableViewController.swift */,
+				B245F3682493F2B500F21388 /* SelectDaysTableViewController.swift */,
+				B245F3692493F2B500F21388 /* AlarmNameTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B245F36A2493F2B500F21388 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B245F36B2493F2B500F21388 /* DatePickerTableViewCell.swift */,
+				B245F36C2493F2B500F21388 /* RightDetailTableViewCell.swift */,
+				B245F36D2493F2B500F21388 /* AlarmNameTableViewCell.swift */,
+				B245F36E2493F2B500F21388 /* SwitchTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B245F3772493F2CB00F21388 /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				B245F3782493F2CB00F21388 /* Models */,
+				B245F37B2493F2CB00F21388 /* Controllers */,
+				B245F37D2493F2CB00F21388 /* Views */,
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
+		B245F3782493F2CB00F21388 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B245F3792493F2CB00F21388 /* sounds.swift */,
+				B245F37A2493F2CB00F21388 /* Registration.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B245F37B2493F2CB00F21388 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B245F37C2493F2CB00F21388 /* RegistrationTableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B245F37D2493F2CB00F21388 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B245F37E2493F2CB00F21388 /* RegistrationTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B245F3832493F2EA00F21388 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B245F3842493F2EA00F21388 /* HorizontalStackView.swift */,
+				B245F3852493F2EA00F21388 /* UIView+ConstraintLayout.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		B2A90DA12492BB6500E7FF10 /* WorldClock */ = {
@@ -310,19 +424,33 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2A90D9E2492BB4900E7FF10 /* TimeZonesTableViewController.swift in Sources */,
+				B245F3862493F2EA00F21388 /* HorizontalStackView.swift in Sources */,
+				B245F3812493F2CB00F21388 /* RegistrationTableViewController.swift in Sources */,
+				B245F3742493F2B500F21388 /* RightDetailTableViewCell.swift in Sources */,
 				B2A90DA42492BBBB00E7FF10 /* WorldClock.swift in Sources */,
 				96A7CCBD2481BDD200A44854 /* StopwatchViewController.swift in Sources */,
 				96A7CCBB2481BDB100A44854 /* AlarmViewController.swift in Sources */,
+				B245F3712493F2B500F21388 /* SelectDaysTableViewController.swift in Sources */,
+				B245F3802493F2CB00F21388 /* Registration.swift in Sources */,
+				B245F3872493F2EA00F21388 /* UIView+ConstraintLayout.swift in Sources */,
+				B245F3732493F2B500F21388 /* DatePickerTableViewCell.swift in Sources */,
 				B2A90DA62492BBD400E7FF10 /* Location.swift in Sources */,
+				B245F37F2493F2CB00F21388 /* sounds.swift in Sources */,
 				96A7CCBF2481BDE000A44854 /* TimerViewController.swift in Sources */,
 				B2334A492490A5E900DB82AD /* HMSTimer.swift in Sources */,
+				B245F3752493F2B500F21388 /* AlarmNameTableViewCell.swift in Sources */,
+				B245F36F2493F2B500F21388 /* AddRegistrationTableViewController.swift in Sources */,
 				B2334A4324909EBE00DB82AD /* AddRingtoneTableViewController.swift in Sources */,
 				B2A90DA02492BB5A00E7FF10 /* TimeZonesTableViewCell.swift in Sources */,
 				B2334A4524909EE100DB82AD /* AddRingtoneTableViewCell.swift in Sources */,
 				B2A90D9A2492BB0900E7FF10 /* WorldClockTableViewController.swift in Sources */,
 				96A7CCA52481B7BC00A44854 /* AppDelegate.swift in Sources */,
+				B245F3822493F2CB00F21388 /* RegistrationTableViewCell.swift in Sources */,
+				B245F3762493F2B500F21388 /* SwitchTableViewCell.swift in Sources */,
+				B245F3722493F2B500F21388 /* AlarmNameTableViewController.swift in Sources */,
 				B2334A4B2490A5FF00DB82AD /* TimeDataSource.swift in Sources */,
 				96A7CCA72481B7BC00A44854 /* SceneDelegate.swift in Sources */,
+				B245F3702493F2B500F21388 /* SelectSoundTableViewController.swift in Sources */,
 				B2334A4D2490A60F00DB82AD /* Ringtone.swift in Sources */,
 				B2A90D9C2492BB2C00E7FF10 /* WorldClockTableViewCell.swift in Sources */,
 			);
