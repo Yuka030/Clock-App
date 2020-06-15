@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-ClockApp/Pods-ClockApp-frameworks.sh
+${BUILT_PRODUCTS_DIR}/KDCircularProgress/KDCircularProgress.framework
+${BUILT_PRODUCTS_DIR}/MBCircularProgressBar/MBCircularProgressBar.framework

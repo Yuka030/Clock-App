@@ -1,0 +1,12 @@
+{
+  "data" : [
+    {
+      "filename" : "Pods-ClockApp-umbrella.h",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

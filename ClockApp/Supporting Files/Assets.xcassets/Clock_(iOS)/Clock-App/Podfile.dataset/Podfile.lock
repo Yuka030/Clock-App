@@ -1,0 +1,20 @@
+PODS:
+  - KDCircularProgress (1.5.4)
+  - MBCircularProgressBar (0.3.5)
+
+DEPENDENCIES:
+  - KDCircularProgress
+  - MBCircularProgressBar
+
+SPEC REPOS:
+  trunk:
+    - KDCircularProgress
+    - MBCircularProgressBar
+
+SPEC CHECKSUMS:
+  KDCircularProgress: 98200c6b8e85d22bc04eb644721d3b1e12b0686b
+  MBCircularProgressBar: 0b795b722a5eb5b0923822f90474e2576a1a7855
+
+PODFILE CHECKSUM: 74340c24907de5720d2819fed46125fcb6d6e556
+
+COCOAPODS: 1.9.3
