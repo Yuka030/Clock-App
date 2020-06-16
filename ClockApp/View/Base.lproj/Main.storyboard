@@ -182,14 +182,14 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AddRingtoneCell" id="d9M-2c-6rG" customClass="AddRingtoneTableViewCell" customModule="ClockApp" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="42.5"/>
+                                <rect key="frame" x="0.0" y="28" width="414" height="42"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="d9M-2c-6rG" id="dVp-Vr-qKq">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="42.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="42"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rader(Default)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aLZ-iR-Dyl">
-                                            <rect key="frame" x="20" y="10" width="374" height="22.5"/>
+                                            <rect key="frame" x="20" y="10" width="374" height="22"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
@@ -231,10 +231,10 @@
             </objects>
             <point key="canvasLocation" x="4358" y="2189"/>
         </scene>
-        <!--View Controller-->
+        <!--Stopwatch View Controller-->
         <scene sceneID="6Em-fJ-zt8">
             <objects>
-                <viewController id="4YL-K0-NLo" sceneMemberID="viewController">
+                <viewController id="4YL-K0-NLo" customClass="StopwatchViewController" customModule="ClockApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hXu-On-XM5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
