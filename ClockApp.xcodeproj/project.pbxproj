@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		0F11FEB90133F58729350E29 /* Pods_ClockApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 176B990F940320A9FF82A4AD /* Pods_ClockApp.framework */; };
 		96A7CCAC2481B7BC00A44854 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96A7CCAA2481B7BC00A44854 /* Main.storyboard */; };
-		96A7CCBB2481BDB100A44854 /* AlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A7CCBA2481BDB100A44854 /* AlarmViewController.swift */; };
 		96A7CCBF2481BDE000A44854 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A7CCBE2481BDDF00A44854 /* TimerViewController.swift */; };
 		96A841F62494013F00849E99 /* RegistrationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A841F52494013F00849E99 /* RegistrationTableViewController.swift */; };
 		96A841F82494014F00849E99 /* RegistrationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A841F72494014F00849E99 /* RegistrationTableViewCell.swift */; };
@@ -51,7 +50,6 @@
 		96A7CCA12481B7BC00A44854 /* ClockApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClockApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96A7CCAB2481B7BC00A44854 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		96A7CCB22481B7BE00A44854 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		96A7CCBA2481BDB100A44854 /* AlarmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmViewController.swift; sourceTree = "<group>"; };
 		96A7CCBE2481BDDF00A44854 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 		96A841F52494013F00849E99 /* RegistrationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationTableViewController.swift; sourceTree = "<group>"; };
 		96A841F72494014F00849E99 /* RegistrationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationTableViewCell.swift; sourceTree = "<group>"; };
@@ -137,7 +135,6 @@
 				B2A90DA12492BB6500E7FF10 /* WorldClock */,
 				B2334A4624909EF200DB82AD /* Timer */,
 				96A7CCB22481B7BE00A44854 /* Info.plist */,
-				96A7CCBA2481BDB100A44854 /* AlarmViewController.swift */,
 				B245F35D2493F0AA00F21388 /* Alarm */,
 			);
 			path = ClockApp;
@@ -465,7 +462,6 @@
 				B2A90D9E2492BB4900E7FF10 /* TimeZonesTableViewController.swift in Sources */,
 				B245F3862493F2EA00F21388 /* HorizontalStackView.swift in Sources */,
 				B2A90DA42492BBBB00E7FF10 /* WorldClock.swift in Sources */,
-				96A7CCBB2481BDB100A44854 /* AlarmViewController.swift in Sources */,
 				96A842052494019900849E99 /* SwitchTableViewCell.swift in Sources */,
 				B245F3802493F2CB00F21388 /* Registration.swift in Sources */,
 				B245F3872493F2EA00F21388 /* UIView+ConstraintLayout.swift in Sources */,
