@@ -12,7 +12,7 @@ You can set an alarm that plays a sound or vibration at a specific time.
 - Stopwatch
 You can use the stopwatch to measure the duration of an event.
 
--Timer
+- Timer
 You can use the timer to count down from a specified time. 
 
 ## Team 6
